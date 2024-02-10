@@ -1,0 +1,13 @@
+nc: 90  # Adjust for your dataset's number of classes
+#path:   # Update with your dataset path
+
+train:  "c:\\Users\\ABHAS\\Downloads\\CoVA_dataset\\content\\train1"
+# Only provide training path since you don't have validation
+    # Disable caching if disk space is limited
+  # Add augmentations if needed (e.g., flip, rotate)
+
+# Omit `val` section since you don't have a validation set
+val:  "C:\\Users\\ABHAS\\Downloads\\CoVA_dataset\\content\\val_final"
+imgsz: [1080, 1080]  # Experiment with different sizes based on GPU memory and accuracy
+batch_size: 32  # Adjust based on GPU memory and dataset size
+
